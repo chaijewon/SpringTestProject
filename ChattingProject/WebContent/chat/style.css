@@ -1,0 +1,193 @@
+body{
+  background: #C5DDEB;
+}
+.main{
+  width: 900px;
+  height: auto;
+  background: transparent;
+  margin: 10px auto;
+}
+.online-chat{
+  width: 30%;
+  background: transparent;
+  color: #FFF;
+  float: left;
+  font: 17px sans-serif;
+}
+input[type=checkbox]{display: none}
+label {
+  width: 85%;
+  display: inline-block;
+  background: #57A0D4;
+  padding: 21px;
+  cursor: pointer;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+ul li{
+  width: 86%;
+  padding: 19px;
+  background: #fff;
+  color: #4FB9A7;
+  cursor: pointer;
+}
+ul li:after{
+  content: " ";
+  float: right;
+  position: relative;
+  top: 30px;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+}
+ul li:hover{background: #57A0D4}
+
+ul li a{
+  position: relative;
+  top: -25px;
+  left: 0;
+}
+ul li:hover a{
+  color:#FFF;
+}
+ul li img{
+  width: 20%;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: relative;
+  top:0;
+  left: -10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #57A0D4;
+}
+ul li:nth-child(2n+1):after{
+  background: #0F9D28;
+}
+ul li:nth-child(2n):after{
+  background: #0F9D28;
+}
+ul li:nth-child(3n-2):after{
+  background: #E38968;
+}
+/* nth child hover*/
+
+ul li:nth-child(2n+1):hover{
+  border-left: 2px solid #0F9D28;
+}
+ul li:nth-child(2n):hover{
+  border-left: 2px solid #0F9D28;
+}
+ul li:nth-child(3n-2):hover{
+  border-left: 2px solid #E38968;
+}
+/* when label checked  */
+input[type=checkbox]:checked ~ label {
+  background: #3D88BD;
+}
+input[type=checkbox]:checked ~ ul  {
+  display: block;
+}
+
+/* chat conversation*/
+.chat{
+  width: 68%;
+  height: 800px;
+  float:right;
+  background: #F2F5F8;
+  border-radius: 5px;
+  color: #434651;
+}
+
+.chat-header {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+.img-header{
+  display: inline-block;
+  border: 2px solid #333;
+  border-radius:50%; 
+  position: relative;
+  top: 0;
+  left: 30%;
+}
+    
+.chat-with{
+  display: inline-block;
+  font: bold 17px sans-serif;
+  position: relative;
+  top: -10px;
+  left: 32%;
+}
+.chat-with:after{
+  content: " ";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0F9D28;
+  position: relative;
+  top: -11px;
+  left: 130px;
+}
+.chat-history {
+	height: 452px;
+	padding: 8px 24px;
+	overflow-y: scroll;
+  overflow-x: hidden ;
+}
+
+.chat-message {
+	margin: 16px 0;
+}
+
+.chat-message img {
+  border: 2px solid #333;
+	border-radius: 50%;
+	float: left;
+}
+
+.chat-message-content {
+	margin-left: 56px;
+}
+
+.chat-time {
+	float: right;
+	font-size: 12px;
+}
+ 
+textarea {
+  width: 75%;
+  border: 2px solid #94c2ed;
+  padding: 20px;
+  font: 14px/22px "Lato", Arial;
+  /* margin: 20px 10px; */
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  float: left;
+}
+#btn{
+  width: 100px;
+  height: 110px;
+  float: left;
+  color: #FFF ;
+  font: bold 16px "Lato" ;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  background: #94c2ed;
+ /*  margin: -24px 10px; */
+}   
+#btn:hover{
+  background: rgba(14, 190, 255, 0.69);
+}
